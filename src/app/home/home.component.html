@@ -1,0 +1,13 @@
+<button (click)="logout()" mat-raised-button color="primary">Logout</button>
+<li class="cards_item" *ngFor="let contact of userlistcontact">
+  <span class="card">
+    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+    <div class="card_content">
+      <h2 class="card_title">{{contact.username}}</h2>
+      <p class="card_text">{{contact.email}}</p>
+      <p class="card_text">{{contact.city}}</p>
+      <p class="card_text">{{contact.phone}}</p>
+<button  (click)="edit(contact)"  class="btn card_btn">Edit</button>
+    </div>
+  </span>
+</li>
